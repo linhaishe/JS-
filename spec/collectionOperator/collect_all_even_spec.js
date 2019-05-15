@@ -11,6 +11,7 @@ describe('collect_all_even', function () {
 //it块称为"测试用例"（test case），表示一个单独的测试，是测试的最小单位。它也是一个函数，第一个参数是测试用例的名称（"1 加 1 应该等于 2"），第二个参数是一个实际执行的函数。
 
     var result = collect_all_even(collection_a);
+    
 //expect 断言，测试 result 和 collection_b 结果是否一致，从而判断该测试用例是否通过
 
     expect(result).toEqual(collection_b);

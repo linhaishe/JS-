@@ -11,5 +11,6 @@ function collect_all_even(collection) {
   }
   return asw;
 }
-
+console.log('输出结果：'+ asw);
 module.exports = collect_all_even;
+//function collect_all_even(collection)//collection如何匹配到spce里的数组的？
