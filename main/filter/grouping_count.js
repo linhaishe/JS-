@@ -1,8 +1,22 @@
 'use strict';
 
 function grouping_count(collection) {
-
-  //在这里写入代码
+  let object ={};
+  let answer = [];
+  for(let item of collection){
+    if(!object[item]){
+      object[item] = {};
+      object[item].key = item;
+      object[item].value = 1;
+    }else{
+      object[item].value ++;
+    }
+  }
+  for(let key in object){
+    answer.push(object[key]);
+  }
+  console.log(answer);
+  return answer;
 }
-
+//?????????????????
 module.exports = grouping_count;
