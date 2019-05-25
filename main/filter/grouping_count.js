@@ -1,7 +1,7 @@
 'use strict';
 
 function grouping_count(collection) {
-  let object ={};
+  let object ={};//设置了object对象
   let answer = [];
   for(let item of collection){
     if(!object[item]){
@@ -18,5 +18,5 @@ function grouping_count(collection) {
   console.log(answer);
   return answer;
 }
-//?????????????????
+//run错误，找不到错误原因
 module.exports = grouping_count;
