@@ -7,6 +7,7 @@ function collect_max_number(collection) {
   // });
   let result = Math.max(...collection);
   return result;
+  //因为文件夹命名为reduce,应该是用reduce进行处理，但是不会。
 }
 
 
