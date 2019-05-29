@@ -1,5 +1,23 @@
 function count_same_elements(collection) {
-  //在这里写入代码
+  //没看懂
+  let obj = {};
+  let answer = [];
+   for(let item of collection){
+       if(!obj[item]){
+          obj[item] = {};
+          obj[item].key = item;
+          obj[item].count = 1;
+       }
+       else{
+          obj[item].count++;
+       }
+   }
+   for (let key in obj){
+       answer.push(obj[key]);
+   }
+  
+  console.log(answer);
+  return answer;
 }
 
 module.exports = count_same_elements;
