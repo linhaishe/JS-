@@ -21,6 +21,16 @@ function count_same_elements(collection) {
   
   console.log(answer);
   return answer;
+
+  // let result = [];
+
+  // collection.forEach(item => {
+  // if (!result.find(element => element.key === item))
+  // result.push({key: item, count: collection.filter(element => element === item).length});
+  
+  // });
+  
+  // return result;
 }
 
 module.exports = count_same_elements;
